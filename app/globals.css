@@ -58,55 +58,55 @@
 }
 
 :root {
-  /* Warm cream-rose palette — cura, feminilidade, confiança */
-  --background: oklch(0.98 0.005 60);           /* creme quente */
-  --foreground: oklch(0.18 0.01 30);            /* quase preto */
+  /* Paleta: Branco + Rosa + Amarelo — leve, feminino, impactante */
+  --background: oklch(1 0 0);                   /* branco puro */
+  --foreground: oklch(0.15 0.01 30);            /* preto suave para texto */
 
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.18 0.01 30);
+  --card: oklch(0.99 0.004 340);                /* branco levemente rosado */
+  --card-foreground: oklch(0.15 0.01 30);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.18 0.01 30);
+  --popover-foreground: oklch(0.15 0.01 30);
 
-  --primary: oklch(0.42 0.12 25);              /* vinho profundo */
-  --primary-foreground: oklch(0.98 0.005 60);
+  --primary: oklch(0.58 0.22 350);              /* rosa vibrante */
+  --primary-foreground: oklch(1 0 0);
 
-  --secondary: oklch(0.92 0.025 50);           /* pêssego claro */
-  --secondary-foreground: oklch(0.25 0.04 30);
+  --secondary: oklch(0.97 0.015 340);           /* rosa bem claro / quase branco */
+  --secondary-foreground: oklch(0.20 0.01 30);
 
-  --muted: oklch(0.95 0.01 55);
-  --muted-foreground: oklch(0.50 0.03 35);
+  --muted: oklch(0.96 0.01 340);               /* fundo rosa pálido */
+  --muted-foreground: oklch(0.45 0.04 350);
 
-  --accent: oklch(0.78 0.10 50);               /* cobre/ouro rosado */
-  --accent-foreground: oklch(0.15 0.02 30);
+  --accent: oklch(0.80 0.16 85);               /* amarelo dourado vibrante */
+  --accent-foreground: oklch(0.15 0.01 30);
 
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.88 0.015 50);
-  --input: oklch(0.88 0.015 50);
-  --ring: oklch(0.60 0.10 30);
+  --border: oklch(0.90 0.03 340);              /* borda rosada suave */
+  --input: oklch(0.92 0.02 340);
+  --ring: oklch(0.58 0.22 350);
   --radius: 0.75rem;
 
   /* Brand-specific tokens */
-  --brand: oklch(0.42 0.12 25);               /* vinho */
-  --brand-foreground: oklch(0.98 0.005 60);
-  --brand-muted: oklch(0.92 0.04 25);         /* rosa suave */
-  --gold: oklch(0.72 0.10 72);               /* dourado */
-  --gold-foreground: oklch(0.18 0.01 30);
-  --dark: oklch(0.12 0.015 30);              /* quase preto */
-  --dark-foreground: oklch(0.97 0.01 60);
+  --brand: oklch(0.58 0.22 350);              /* rosa principal */
+  --brand-foreground: oklch(1 0 0);
+  --brand-muted: oklch(0.94 0.04 350);        /* rosa pastel */
+  --gold: oklch(0.80 0.16 85);               /* amarelo dourado */
+  --gold-foreground: oklch(0.15 0.01 30);
+  --dark: oklch(0.15 0.015 30);              /* quase preto */
+  --dark-foreground: oklch(0.98 0.005 0);
 
-  --chart-1: oklch(0.42 0.12 25);
-  --chart-2: oklch(0.72 0.10 72);
-  --chart-3: oklch(0.78 0.10 50);
-  --chart-4: oklch(0.60 0.08 340);
-  --chart-5: oklch(0.50 0.06 30);
-  --sidebar: oklch(0.97 0.008 55);
-  --sidebar-foreground: oklch(0.18 0.01 30);
-  --sidebar-primary: oklch(0.42 0.12 25);
-  --sidebar-primary-foreground: oklch(0.98 0.005 60);
-  --sidebar-accent: oklch(0.92 0.025 50);
-  --sidebar-accent-foreground: oklch(0.25 0.04 30);
-  --sidebar-border: oklch(0.88 0.015 50);
-  --sidebar-ring: oklch(0.60 0.10 30);
+  --chart-1: oklch(0.58 0.22 350);
+  --chart-2: oklch(0.80 0.16 85);
+  --chart-3: oklch(0.72 0.18 340);
+  --chart-4: oklch(0.65 0.12 60);
+  --chart-5: oklch(0.50 0.08 350);
+  --sidebar: oklch(0.99 0.004 340);
+  --sidebar-foreground: oklch(0.15 0.01 30);
+  --sidebar-primary: oklch(0.58 0.22 350);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.97 0.015 340);
+  --sidebar-accent-foreground: oklch(0.20 0.01 30);
+  --sidebar-border: oklch(0.90 0.03 340);
+  --sidebar-ring: oklch(0.58 0.22 350);
 }
 
 @layer base {
@@ -126,17 +126,17 @@
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: oklch(0.95 0.01 55);
+  background: oklch(0.96 0.01 340);
 }
 ::-webkit-scrollbar-thumb {
-  background: oklch(0.60 0.08 30);
+  background: oklch(0.58 0.22 350);
   border-radius: 3px;
 }
 
 /* Animations */
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 0 0 oklch(0.42 0.12 25 / 0.4); }
-  50% { box-shadow: 0 0 0 12px oklch(0.42 0.12 25 / 0); }
+  0%, 100% { box-shadow: 0 0 0 0 oklch(0.58 0.22 350 / 0.45); }
+  50% { box-shadow: 0 0 0 14px oklch(0.58 0.22 350 / 0); }
 }
 
 .btn-pulse {

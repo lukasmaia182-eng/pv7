@@ -22,14 +22,14 @@ export function AnnouncementBar() {
   const pad = (n: number) => String(n).padStart(2, '0')
 
   return (
-    <div className="bg-[var(--color-dark)] text-[var(--color-dark-foreground)] py-2.5 px-4 text-center text-sm font-medium">
-      <span className="opacity-80">Oferta por tempo limitado — encerra em</span>{' '}
+    <div className="bg-[var(--color-brand)] text-white py-2.5 px-4 text-center text-sm font-medium">
+      <span className="opacity-90">Oferta por tempo limitado — encerra em</span>{' '}
       <span className="font-bold text-[var(--color-gold)] tabular-nums">
         {pad(timeLeft.hours)}:{pad(timeLeft.minutes)}:{pad(timeLeft.seconds)}
       </span>{' '}
-      <span className="opacity-80">· Apenas</span>{' '}
+      <span className="opacity-90">· Apenas</span>{' '}
       <span className="font-bold text-[var(--color-gold)]">47 vagas</span>{' '}
-      <span className="opacity-80">restantes</span>
+      <span className="opacity-90">restantes</span>
     </div>
   )
 }

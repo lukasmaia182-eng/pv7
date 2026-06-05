@@ -154,7 +154,7 @@ export function TestimonialsSection() {
         </div>
 
         {/* Stats bar */}
-        <div className="mt-14 bg-[var(--color-dark)] rounded-2xl p-6 sm:p-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div className="mt-14 bg-[var(--color-brand)] rounded-2xl p-6 sm:p-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           {[
             { num: '3.600+', label: 'Mulheres transformadas' },
             { num: '97%', label: 'Relatam mudança no Dia 4' },
@@ -165,7 +165,7 @@ export function TestimonialsSection() {
               <div className="font-heading text-2xl sm:text-3xl font-bold text-[var(--color-gold)]">
                 {stat.num}
               </div>
-              <div className="text-[var(--color-dark-foreground)]/60 text-xs mt-1 uppercase tracking-wider">
+              <div className="text-white/70 text-xs mt-1 uppercase tracking-wider">
                 {stat.label}
               </div>
             </div>

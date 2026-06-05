@@ -51,20 +51,20 @@ const bonuses = [
 
 export function OfferSection() {
   return (
-    <section id="oferta" className="py-20 md:py-28 bg-[var(--color-dark)] relative overflow-hidden">
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-1/4 left-0 w-96 h-96 rounded-full bg-[var(--color-gold)] blur-3xl" />
-        <div className="absolute bottom-0 right-0 w-80 h-80 rounded-full bg-[var(--color-brand)] blur-3xl" />
+    <section id="oferta" className="py-20 md:py-28 bg-background relative overflow-hidden">
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-1/4 left-0 w-96 h-96 rounded-full bg-[var(--color-brand)] blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-80 h-80 rounded-full bg-[var(--color-gold)] blur-3xl" />
       </div>
 
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-14">
-          <p className="text-[var(--color-gold)] font-medium text-sm uppercase tracking-widest mb-3">
+          <p className="text-[var(--color-brand)] font-medium text-sm uppercase tracking-widest mb-3">
             Bônus exclusivos
           </p>
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-[var(--color-dark-foreground)] text-balance leading-tight">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-foreground text-balance leading-tight">
             Muito mais do que{' '}
-            <span className="italic font-light text-[var(--color-gold)]">você esperava</span>
+            <span className="italic font-light text-[var(--color-brand)]">você esperava</span>
           </h2>
         </div>
 
@@ -73,28 +73,28 @@ export function OfferSection() {
           {bonuses.map((bonus, i) => (
             <div
               key={i}
-              className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/8 hover:border-[var(--color-gold)]/30 transition-all group"
+              className="bg-white border border-[var(--color-brand)]/15 rounded-2xl p-6 hover:border-[var(--color-brand)]/40 hover:shadow-lg transition-all group shadow-sm"
             >
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-[var(--color-gold)]/15 border border-[var(--color-gold)]/20 flex items-center justify-center text-[var(--color-gold)] flex-shrink-0">
+                <div className="w-12 h-12 rounded-xl bg-[var(--color-brand)]/10 border border-[var(--color-brand)]/20 flex items-center justify-center text-[var(--color-brand)] flex-shrink-0">
                   {bonus.icon}
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center justify-between gap-2 mb-1">
-                    <span className="text-xs bg-[var(--color-gold)]/20 text-[var(--color-gold)] rounded-full px-2.5 py-0.5 font-medium">
+                    <span className="text-xs bg-[var(--color-brand)]/10 text-[var(--color-brand)] rounded-full px-2.5 py-0.5 font-medium">
                       {bonus.badge}
                     </span>
-                    <span className="text-[var(--color-dark-foreground)]/40 text-xs line-through">
+                    <span className="text-muted-foreground text-xs line-through">
                       {bonus.value}
                     </span>
                   </div>
-                  <h3 className="text-[var(--color-dark-foreground)] font-semibold text-base mb-2">
+                  <h3 className="text-foreground font-semibold text-base mb-2">
                     {bonus.title}
                   </h3>
-                  <p className="text-[var(--color-dark-foreground)]/60 text-sm leading-relaxed">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
                     {bonus.desc}
                   </p>
-                  <p className="text-[var(--color-gold)] font-bold text-sm mt-3">GRÁTIS</p>
+                  <p className="text-[var(--color-brand)] font-bold text-sm mt-3">GRÁTIS</p>
                 </div>
               </div>
             </div>
@@ -102,12 +102,12 @@ export function OfferSection() {
         </div>
 
         {/* Offer box */}
-        <div className="bg-white/5 border border-[var(--color-gold)]/30 rounded-3xl p-6 sm:p-8 max-w-2xl mx-auto">
+        <div className="bg-white border-2 border-[var(--color-brand)]/30 rounded-3xl p-6 sm:p-8 max-w-2xl mx-auto shadow-xl">
           <div className="text-center mb-8">
-            <p className="text-[var(--color-dark-foreground)]/60 text-sm uppercase tracking-wider mb-2">
+            <p className="text-muted-foreground text-sm uppercase tracking-wider mb-2">
               Resumo do que você leva
             </p>
-            <h3 className="font-heading text-2xl font-semibold text-[var(--color-dark-foreground)]">
+            <h3 className="font-heading text-2xl font-semibold text-foreground">
               Tudo isso por apenas
             </h3>
           </div>
@@ -122,38 +122,38 @@ export function OfferSection() {
               { item: 'Bônus 4 — Comunidade Exclusiva de Mulheres', value: 'Impagável' },
             ].map((row) => (
               <div key={row.item} className="flex items-center justify-between gap-3">
-                <div className="flex items-center gap-2 text-[var(--color-dark-foreground)]/70 text-sm">
-                  <svg className="w-4 h-4 text-[var(--color-gold)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <div className="flex items-center gap-2 text-foreground/70 text-sm">
+                  <svg className="w-4 h-4 text-[var(--color-brand)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                   {row.item}
                 </div>
-                <span className="text-[var(--color-dark-foreground)]/40 text-sm line-through whitespace-nowrap">
+                <span className="text-muted-foreground text-sm line-through whitespace-nowrap">
                   {row.value}
                 </span>
               </div>
             ))}
           </div>
 
-          <div className="border-t border-white/10 pt-6 text-center">
-            <p className="text-[var(--color-dark-foreground)]/50 text-sm mb-1">
+          <div className="border-t border-border pt-6 text-center">
+            <p className="text-muted-foreground text-sm mb-1">
               Valor total de mais de{' '}
               <span className="line-through">R$408</span>
             </p>
-            <div className="font-heading text-5xl sm:text-6xl font-bold text-[var(--color-gold)] mb-1">
+            <div className="font-heading text-5xl sm:text-6xl font-bold text-[var(--color-brand)] mb-1">
               R$ 44
             </div>
-            <p className="text-[var(--color-dark-foreground)]/50 text-sm mb-6">
+            <p className="text-muted-foreground text-sm mb-6">
               pagamento único · acesso imediato
             </p>
 
             <CTAButton size="xl" className="btn-pulse w-full justify-center" />
 
             {/* Security */}
-            <div className="flex flex-wrap justify-center gap-4 mt-5 text-[var(--color-dark-foreground)]/40 text-xs">
+            <div className="flex flex-wrap justify-center gap-4 mt-5 text-muted-foreground text-xs">
               {['Pix', 'Cartão de crédito', 'Boleto', 'Pagamento 100% seguro'].map((m) => (
                 <span key={m} className="flex items-center gap-1">
-                  <svg className="w-3.5 h-3.5 text-[var(--color-gold)]" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-3.5 h-3.5 text-[var(--color-brand)]" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
                   </svg>
                   {m}

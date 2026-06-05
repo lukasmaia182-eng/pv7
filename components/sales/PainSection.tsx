@@ -56,11 +56,11 @@ export function PainSection() {
 
         {/* Bridge */}
         <div className="mt-14 text-center">
-          <div className="inline-block bg-[var(--color-dark)] text-[var(--color-dark-foreground)] rounded-2xl px-6 py-5 max-w-lg">
+          <div className="inline-block bg-[var(--color-brand)] text-white rounded-2xl px-6 py-5 max-w-lg">
             <p className="font-heading text-xl sm:text-2xl font-semibold italic text-[var(--color-gold)] mb-2">
               &ldquo;Quando eu vou conseguir me libertar disso?&rdquo;
             </p>
-            <p className="text-[var(--color-dark-foreground)]/70 text-sm">
+            <p className="text-white/80 text-sm">
               Se você respondeu sim para qualquer item acima, mesmo que em silêncio — esse desafio foi criado especificamente para você.
             </p>
           </div>

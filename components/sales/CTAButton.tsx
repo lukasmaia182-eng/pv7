@@ -34,7 +34,7 @@ export function CTAButton({ size = 'default', className, variant = 'primary' }: 
       href="#oferta"
       className={cn(
         'inline-flex items-center justify-center gap-3 font-bold rounded-full transition-all duration-300 transform hover:scale-[1.03] active:scale-[0.98] shadow-lg hover:shadow-xl',
-        'bg-[var(--color-brand)] text-[var(--color-brand-foreground)] hover:bg-[oklch(0.38_0.12_25)]',
+        'bg-[var(--color-brand)] text-white hover:bg-[oklch(0.52_0.22_350)]',
         sizeClasses[size],
         className
       )}
