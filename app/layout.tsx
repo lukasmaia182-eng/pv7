@@ -17,7 +17,7 @@ const cormorant = Cormorant_Garamond({
 })
 
 export const metadata: Metadata = {
-  title: 'Desafio Desapego Narcisista | 7 Dias Para se Libertar — Dra. Jane Hansen',
+  title: 'Desafio Desapego Narcisista | 7 Dias Para se Libertar — Projeto Renascer Emocional',
   description:
     'Em 7 dias você quebra o vínculo traumático que está destruindo seu sono, seu corpo e sua autoestima. Mais de 3.600 mulheres já se libertaram. Agora é a sua vez.',
   keywords: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     'trauma narcisista',
     'vínculo traumático',
     'cura emocional',
-    'Dra Jane Hansen',
+    'Projeto Renascer Emocional',
     'desafio 7 dias',
   ],
   openGraph: {

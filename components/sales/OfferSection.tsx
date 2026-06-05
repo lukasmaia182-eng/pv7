@@ -115,7 +115,7 @@ export function OfferSection() {
           {/* Value breakdown */}
           <div className="space-y-3 mb-6">
             {[
-              { item: '7 dias de encontros ao vivo com a Dra. Jane Hansen', value: 'R$197' },
+              { item: '7 dias de encontros ao vivo com o Projeto Renascer Emocional', value: 'R$197' },
               { item: 'Bônus 1 — Checklist 21 Sinais de Narcisista', value: 'R$47' },
               { item: 'Bônus 2 — Meditação de Corte Energético', value: 'R$67' },
               { item: 'Bônus 3 — Guia de Reconstrução da Autoestima', value: 'R$97' },

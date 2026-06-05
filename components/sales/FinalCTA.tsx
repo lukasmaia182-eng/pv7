@@ -97,7 +97,7 @@ export function FinalCTA() {
           <p className="text-[var(--color-dark-foreground)]/50 text-sm sm:text-base italic leading-relaxed max-w-lg mx-auto">
             &ldquo;Você chegou até aqui por uma razão. Honra essa razão. O vínculo que te prende está lutando para você não clicar. Não deixa ele ganhar mais esse dia.&rdquo;
           </p>
-          <p className="text-[var(--color-dark-foreground)]/30 text-xs mt-3">— Dra. Jane Hansen</p>
+          <p className="text-[var(--color-dark-foreground)]/30 text-xs mt-3">— Projeto Renascer Emocional</p>
         </div>
       </div>
     </section>

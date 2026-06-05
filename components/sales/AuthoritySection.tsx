@@ -12,7 +12,7 @@ export function AuthoritySection() {
               <div className="relative rounded-3xl overflow-hidden border-2 border-[var(--color-brand)]/20 shadow-2xl">
                 <Image
                   src="/images/dr-jane.png"
-                  alt="Dra. Jane Hansen — especialista em trauma narcisista"
+                  alt="Projeto Renascer Emocional — especialista em trauma narcisista"
                   fill
                   className="object-cover"
                 />
@@ -33,12 +33,12 @@ export function AuthoritySection() {
               Quem vai guiar você
             </p>
             <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-foreground text-balance leading-tight mb-6">
-              Dra. Jane Hansen
+              Projeto Renascer Emocional
             </h2>
 
             <div className="space-y-4 text-foreground/80 leading-relaxed">
               <p className="text-lg">
-                A Dra. Jane passou anos percebendo que as abordagens convencionais não foram criadas para esse tipo de ferida.
+                O Projeto Renascer Emocional nasceu de anos percebendo que as abordagens convencionais não foram criadas para esse tipo de ferida.
               </p>
               <p>
                 Terapia convencional trata dor emocional comum.{' '}
@@ -48,7 +48,7 @@ export function AuthoritySection() {
                 É uma reprogramação sistemática da sua identidade, da sua percepção da realidade e do seu sistema nervoso.
               </p>
               <p>
-                Por isso ela desenvolveu um método específico — testado, estruturado e refinado com mais de 3.600 mulheres — que vai ao nível onde o vínculo realmente vive.
+                Por isso desenvolvemos um método específico — testado, estruturado e refinado com mais de 3.600 mulheres — que vai ao nível onde o vínculo realmente vive.
               </p>
             </div>
 
@@ -57,7 +57,7 @@ export function AuthoritySection() {
               <p className="font-heading text-xl md:text-2xl italic text-foreground font-medium leading-snug">
                 &ldquo;Eu não digo que você vai ficar bem. Eu te mostro o caminho de como chegar lá.&rdquo;
               </p>
-              <p className="text-muted-foreground text-sm mt-2">— Dra. Jane Hansen</p>
+              <p className="text-muted-foreground text-sm mt-2">— Projeto Renascer Emocional</p>
             </div>
 
             {/* Credentials */}

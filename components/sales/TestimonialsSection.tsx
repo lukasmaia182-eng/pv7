@@ -59,7 +59,7 @@ const testimonials = [
     location: 'Porto Alegre, RS',
     rating: 5,
     before: 'Fiz o desafio 14 meses depois do término. Achei que era tarde demais — que o dano era permanente.',
-    after: 'Não é tarde demais. O vínculo traumático não tem prazo de validade, como a Dra. Jane explica. Comecei o processo no Dia 1 sentindo que era impossível. Terminei o Dia 7 sentindo que era real.',
+    after: 'Não é tarde demais. O vínculo traumático não tem prazo de validade, como o Projeto Renascer Emocional explica. Comecei o processo no Dia 1 sentindo que era impossível. Terminei o Dia 7 sentindo que era real.',
     initials: 'RA',
     color: 'bg-orange-100 text-orange-700',
   },
