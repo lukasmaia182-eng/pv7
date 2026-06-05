@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import { CTAButton } from './CTAButton'
+import { BeforeAfterSlider } from './BeforeAfterSlider'
 
 export function HeroSection() {
   return (
@@ -81,30 +81,20 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* Right — image */}
+          {/* Right — antes/depois slider */}
           <div className="relative order-1 md:order-2 flex justify-center md:justify-end">
             <div className="relative w-full max-w-sm md:max-w-none">
-              {/* Decorative shape behind image */}
+              {/* Decorative shape behind slider */}
               <div className="absolute inset-0 rounded-[2.5rem] bg-[var(--color-brand)]/20 translate-x-4 translate-y-4" />
-              <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl aspect-[3/4]">
-                <Image
-                  src="/images/hero-woman.png"
-                  alt="Mulher encontrando sua liberdade emocional"
-                  fill
-                  className="object-cover object-top"
-                  priority
-                />
-                {/* Subtle bottom gradient so text badges sit well */}
-                <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[var(--color-brand)]/30 to-transparent" />
-              </div>
+              <BeforeAfterSlider />
               {/* Floating badge */}
-              <div className="absolute -bottom-5 -left-4 bg-white rounded-2xl shadow-xl px-4 py-3 border border-border">
+              <div className="absolute -bottom-5 -left-4 bg-white rounded-2xl shadow-xl px-4 py-3 border border-border z-10">
                 <div className="font-heading text-2xl font-bold text-[var(--color-brand)]">7 dias</div>
                 <div className="text-xs text-muted-foreground leading-tight mt-0.5">para uma nova você</div>
               </div>
               {/* Gold accent dot */}
-              <div className="absolute -top-3 -right-3 w-12 h-12 rounded-full bg-[var(--color-gold)] opacity-80 blur-sm" />
-              <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-[var(--color-gold)]" />
+              <div className="absolute -top-3 -right-3 w-12 h-12 rounded-full bg-[var(--color-gold)] opacity-80 blur-sm z-10" />
+              <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-[var(--color-gold)] z-10" />
             </div>
           </div>
 

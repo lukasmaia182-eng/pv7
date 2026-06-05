@@ -152,6 +152,11 @@
   animation: float 3s ease-in-out infinite;
 }
 
+@keyframes fadeout {
+  0% { opacity: 1; }
+  100% { opacity: 0; pointer-events: none; }
+}
+
 /* Typography helpers */
 .font-heading {
   font-family: var(--font-cormorant), 'Georgia', serif;
