@@ -6,7 +6,7 @@ export function Footer() {
           Pagamento 100% seguro via cartão, PIX ou boleto. Após a confirmação você recebe acesso imediato a todos os materiais e à comunidade exclusiva. Garantia incondicional de 7 dias — ou devolvemos 100% do seu investimento, sem perguntas.
         </p>
         <p className="text-[var(--color-dark-foreground)]/20 text-xs">
-          © 2026 DDN — Desafio Desapego Narcisista · Dra. Jane Hansen · Todos os direitos reservados
+          © 2026 DDN — Desafio Desapego Narcisista · Projeto Renascer Emocional · Todos os direitos reservados
         </p>
       </div>
     </footer>
