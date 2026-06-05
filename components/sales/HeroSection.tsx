@@ -1,5 +1,5 @@
+import Image from 'next/image'
 import { CTAButton } from './CTAButton'
-import { BeforeAfterSlider } from './BeforeAfterSlider'
 
 export function HeroSection() {
   return (
@@ -81,12 +81,48 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* Right — antes/depois slider */}
+          {/* Right — antes e depois lado a lado */}
           <div className="relative order-1 md:order-2 flex justify-center md:justify-end">
             <div className="relative w-full max-w-sm md:max-w-none">
-              {/* Decorative shape behind slider */}
-              <div className="absolute inset-0 rounded-[2.5rem] bg-[var(--color-brand)]/20 translate-x-4 translate-y-4" />
-              <BeforeAfterSlider />
+              {/* Decorative shape behind images */}
+              <div className="absolute inset-0 rounded-[2rem] bg-[var(--color-brand)]/20 translate-x-4 translate-y-4" />
+
+              <div className="relative grid grid-cols-2 gap-2 rounded-[2rem] overflow-hidden shadow-2xl">
+                {/* ANTES */}
+                <div className="relative aspect-[3/4]">
+                  <Image
+                    src="/images/before.png"
+                    alt="Antes — dor emocional do relacionamento narcisista"
+                    fill
+                    className="object-cover object-top"
+                    priority
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  <div className="absolute bottom-3 left-0 right-0 text-center">
+                    <span className="bg-black/50 text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+                      Antes
+                    </span>
+                  </div>
+                </div>
+
+                {/* DEPOIS */}
+                <div className="relative aspect-[3/4]">
+                  <Image
+                    src="/images/after.png"
+                    alt="Depois — liberdade e renascimento emocional"
+                    fill
+                    className="object-cover object-top"
+                    priority
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-brand)]/50 via-transparent to-transparent" />
+                  <div className="absolute bottom-3 left-0 right-0 text-center">
+                    <span className="bg-[var(--color-brand)] text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+                      Depois
+                    </span>
+                  </div>
+                </div>
+              </div>
+
               {/* Floating badge */}
               <div className="absolute -bottom-5 -left-4 bg-white rounded-2xl shadow-xl px-4 py-3 border border-border z-10">
                 <div className="font-heading text-2xl font-bold text-[var(--color-brand)]">7 dias</div>
