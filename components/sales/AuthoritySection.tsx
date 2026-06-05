@@ -7,14 +7,16 @@ export function AuthoritySection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image side */}
           <div className="relative order-2 md:order-1">
-            <div className="relative aspect-[4/5] max-w-sm mx-auto">
-              <div className="absolute inset-0 rounded-3xl bg-[var(--color-brand)]/10 translate-x-3 translate-y-3" />
-              <div className="relative rounded-3xl overflow-hidden border-2 border-[var(--color-brand)]/20 shadow-2xl">
+            <div className="relative max-w-sm mx-auto">
+              {/* Sombra decorativa atrás */}
+              <div className="absolute inset-0 rounded-3xl bg-[var(--color-brand)]/15 translate-x-3 translate-y-3" />
+              {/* Container com aspect-ratio e position:relative para o fill funcionar */}
+              <div className="relative aspect-[4/5] rounded-3xl overflow-hidden border-2 border-[var(--color-brand)]/20 shadow-2xl">
                 <Image
                   src="/images/dr-jane.png"
                   alt="Projeto Renascer Emocional — especialista em trauma narcisista"
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                 />
               </div>
             </div>
