@@ -72,15 +72,16 @@ export function FinalCTA() {
         </div>
 
         {/* Main message */}
-        <p className="font-heading text-2xl sm:text-3xl md:text-4xl text-white font-light leading-relaxed mb-6 text-balance">
-          A diferença entre esses dois lugares é{' '}
-          <strong className="font-semibold">uma decisão.</strong>
-          <br />
-          <span className="italic text-[var(--color-gold)]">Essa decisão. Agora.</span>
+        <p className="font-heading text-2xl sm:text-3xl md:text-4xl text-white font-light leading-relaxed mb-4 text-balance">
+          Você chegou até aqui porque uma parte de você já sabe:{' '}
+          <strong className="font-semibold">isso precisa mudar.</strong>
+        </p>
+        <p className="font-heading text-xl sm:text-2xl text-[var(--color-gold)] font-semibold italic mb-6">
+          Honra essa parte. Ela está certa.
         </p>
 
         <p className="text-white/75 text-base mb-10 max-w-lg mx-auto">
-          Mais de 3.600 mulheres já tomaram essa decisão. Todas elas hesitaram antes de clicar. Todas elas agradecem por ter clicado.
+          Mais de 3.600 mulheres tomaram essa decisão. Todas hesitaram. Nenhuma se arrependeu.
         </p>
 
         <div className="flex flex-col items-center gap-4">
@@ -102,8 +103,8 @@ export function FinalCTA() {
 
         {/* Final note */}
         <div className="mt-16 border-t border-white/20 pt-10">
-          <p className="text-white/60 text-sm sm:text-base italic leading-relaxed max-w-lg mx-auto">
-            &ldquo;Você chegou até aqui por uma razão. Honra essa razão. O vínculo que te prende está lutando para você não clicar. Não deixa ele ganhar mais esse dia.&rdquo;
+          <p className="text-white/65 text-sm sm:text-base italic leading-relaxed max-w-lg mx-auto">
+            &ldquo;O vínculo que te prendeu a ele está, neste exato momento, tentando te convencer de que não é o momento certo. Que você pode esperar. Que talvez amanhã. Esse pensamento não é seu. É o vínculo se defendendo. Não deixe ele ganhar mais esse dia.&rdquo;
           </p>
           <p className="text-white/30 text-xs mt-3">— Projeto Renascer Emocional</p>
         </div>

@@ -24,17 +24,27 @@ export function PainSection() {
     <section className="py-20 md:py-28 bg-background">
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
         {/* Section intro */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-12">
           <p className="text-[var(--color-brand)] font-medium text-sm uppercase tracking-widest mb-3">
-            Você reconhece isso?
+            Isso é sobre você?
           </p>
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-foreground text-balance leading-tight">
-            Você terminou. Saiu.<br />
-            <span className="italic font-light">Fez o que todo mundo dizia pra fazer.</span>
+            Você saiu do relacionamento.<br />
+            <span className="text-[var(--color-brand)]">Mas ele não saiu de você.</span>
           </h2>
-          <p className="text-muted-foreground text-lg mt-4 leading-relaxed">
-            E ainda assim, ele continua lá. Dentro de você.
-          </p>
+
+          {/* Storytelling hook — John Carlton style */}
+          <div className="mt-8 max-w-2xl mx-auto text-left bg-[var(--color-brand-muted)]/50 border border-[var(--color-brand)]/15 rounded-2xl p-6 sm:p-8">
+            <p className="text-foreground/80 text-lg leading-relaxed mb-4">
+              Você conhece a sensação de acordar às 3 da manhã com o coração acelerado, pensando nele — sendo que você já <em>sabe</em> que não deveria estar pensando.
+            </p>
+            <p className="text-foreground/80 text-lg leading-relaxed mb-4">
+              Você já ouviu &ldquo;se cuida&rdquo;, &ldquo;vai pra frente&rdquo;, &ldquo;ele não merece seu choro&rdquo; — de pessoas que te amam mas não fazem ideia do que realmente está acontecendo dentro de você.
+            </p>
+            <p className="text-foreground font-semibold text-lg leading-relaxed">
+              O que está acontecendo <em>não é fraqueza</em>. Não é falta de amor próprio. Tem um nome clínico, uma explicação neurológica — e uma saída real. Mas primeiro, você precisa se reconhecer aqui embaixo:
+            </p>
+          </div>
         </div>
 
         {/* Pain cards */}
@@ -54,14 +64,18 @@ export function PainSection() {
           ))}
         </div>
 
-        {/* Bridge */}
-        <div className="mt-14 text-center">
-          <div className="inline-block bg-[var(--color-brand)] text-white rounded-2xl px-6 py-5 max-w-lg">
-            <p className="font-heading text-xl sm:text-2xl font-semibold italic text-[var(--color-gold)] mb-2">
-              &ldquo;Quando eu vou conseguir me libertar disso?&rdquo;
+        {/* Bridge — Eugene Schwartz: nomeia a dor, cria desejo pela solução */}
+        <div className="mt-12 text-center">
+          <div className="inline-block bg-[var(--color-brand)] text-white rounded-2xl px-6 py-6 max-w-xl text-left">
+            <p className="font-heading text-xl sm:text-2xl font-semibold text-[var(--color-gold)] mb-3">
+              &ldquo;Por que eu não consigo simplesmente parar de pensar nele?&rdquo;
             </p>
-            <p className="text-white/80 text-sm">
-              Se você respondeu sim para qualquer item acima, mesmo que em silêncio — esse desafio foi criado especificamente para você.
+            <p className="text-white/85 text-base leading-relaxed mb-3">
+              Porque a resposta não está no amor próprio. Está no seu sistema nervoso.
+              Você foi condicionada por um ciclo de abuso que criou uma <strong className="text-white">dependência neurológica real</strong> — o mesmo mecanismo do vício.
+            </p>
+            <p className="text-white/85 text-base leading-relaxed">
+              E dependência neurológica não se cura com força de vontade. Se cura com o processo certo. Esse desafio existe para te dar exatamente esse processo.
             </p>
           </div>
         </div>

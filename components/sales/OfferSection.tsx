@@ -101,6 +101,31 @@ export function OfferSection() {
           ))}
         </div>
 
+        {/* Price anchoring — Joe Sugarman / Dan Kennedy */}
+        <div className="mb-10 max-w-2xl mx-auto">
+          <div className="bg-[var(--color-brand-muted)]/60 border border-[var(--color-brand)]/15 rounded-2xl p-6">
+            <p className="text-foreground/70 text-sm text-center mb-4 uppercase tracking-wider font-medium">
+              Antes de falar em preço — compare
+            </p>
+            <div className="grid grid-cols-3 gap-3 text-center text-sm">
+              {[
+                { label: '1 sessão de terapia', price: 'R$150–300', sub: 'sem garantia de resultado' },
+                { label: 'Coaching individual', price: 'R$500+', sub: 'por mês' },
+                { label: 'Este desafio completo', price: 'R$44', sub: '7 dias + 4 bônus', highlight: true },
+              ].map((item) => (
+                <div
+                  key={item.label}
+                  className={`rounded-xl p-3 ${item.highlight ? 'bg-[var(--color-brand)] text-white' : 'bg-white border border-border'}`}
+                >
+                  <p className={`text-xs leading-tight mb-1 ${item.highlight ? 'text-white/80' : 'text-muted-foreground'}`}>{item.label}</p>
+                  <p className={`font-heading text-lg font-bold ${item.highlight ? 'text-[var(--color-gold)]' : 'text-foreground'}`}>{item.price}</p>
+                  <p className={`text-xs mt-0.5 ${item.highlight ? 'text-white/70' : 'text-muted-foreground'}`}>{item.sub}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
         {/* Offer box */}
         <div className="bg-white border-2 border-[var(--color-brand)]/30 rounded-3xl p-6 sm:p-8 max-w-2xl mx-auto shadow-xl">
           <div className="text-center mb-8">
@@ -148,6 +173,11 @@ export function OfferSection() {
             </p>
 
             <CTAButton size="xl" className="btn-pulse w-full justify-center" />
+            <p className="text-[var(--color-brand)] font-medium text-sm mt-3">
+              Acesso imediato assim que o pagamento for confirmado
+            </p>
+            <p className="text-muted-foreground text-xs mt-1">
+              Restam poucas vagas nesta turma · Bônus encerram junto com as vagas</p>
 
             {/* Security */}
             <div className="flex flex-wrap justify-center gap-4 mt-5 text-muted-foreground text-xs">
