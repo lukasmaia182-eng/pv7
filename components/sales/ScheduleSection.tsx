@@ -22,7 +22,7 @@ const days = [
   {
     day: 'Dia 4',
     title: 'Quebrando o Vínculo',
-    desc: 'O coração do desafio. O processo prático e específico de desativar o vínculo traumático no nível onde ele realmente existe — não na cabeça, no sistema nervoso. Esse é o dia que mulheres descrevem como "a virada".',
+    desc: 'O coração do desafio. O processo prático e específico de desativar o vínculo traumático no nível onde ele realmente existe — não na cabeça, no sistema nervoso. Esse é o dia que 97% das participantes descrevem como "a virada" — o momento em que algo realmente muda.',
     highlight: true,
   },
   {
@@ -132,10 +132,18 @@ export function ScheduleSection() {
         </div>
 
         {/* Mid-page CTA */}
-        <div className="mt-14 text-center">
+        <div className="mt-14 text-center bg-[var(--color-brand-muted)]/50 border border-[var(--color-brand)]/15 rounded-2xl p-8">
+          <p className="text-foreground font-semibold text-lg mb-1">
+            Pronta para começar essa jornada?
+          </p>
+          <p className="text-muted-foreground text-sm mb-6">
+            Acesso imediato assim que o pagamento for confirmado
+          </p>
           <CTAButton size="lg" />
-          <p className="text-muted-foreground text-sm mt-3">
-            Vagas limitadas · Garantia de 7 dias · Acesso imediato
+          <p className="text-muted-foreground text-xs mt-3">
+            De <span className="line-through">R$197</span> por{' '}
+            <span className="text-[var(--color-brand)] font-bold">R$44</span>
+            {' '}· Garantia de 7 dias · Vagas limitadas
           </p>
         </div>
       </div>

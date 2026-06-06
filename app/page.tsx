@@ -18,8 +18,8 @@ export default function Home() {
       <HeroSection />
       <PainSection />
       <ScienceSection />
-      <AuthoritySection />
       <ScheduleSection />
+      <AuthoritySection />
       <TestimonialsSection />
       <OfferSection />
       <GuaranteeSection />

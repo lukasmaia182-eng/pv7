@@ -57,7 +57,7 @@ export function AuthoritySection() {
             {/* Quote */}
             <div className="mt-8 border-l-4 border-[var(--color-brand)] pl-5">
               <p className="font-heading text-xl md:text-2xl italic text-foreground font-medium leading-snug">
-                &ldquo;Eu não digo que você vai ficar bem. Eu te mostro o caminho de como chegar lá.&rdquo;
+                &ldquo;Eu já vi mulheres incrivelmente fortes chegarem completamente destruídas. E eu as vi saírem de volta a si mesmas. Não é mágica. É processo. E o processo funciona.&rdquo;
               </p>
               <p className="text-muted-foreground text-sm mt-2">— Projeto Renascer Emocional</p>
             </div>
