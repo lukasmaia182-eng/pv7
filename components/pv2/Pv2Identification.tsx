@@ -1,3 +1,4 @@
+// Server Component — sem 'use client'
 import Image from 'next/image'
 
 const cards = [
@@ -30,16 +31,17 @@ export function Pv2Identification() {
 
       <div className="flex flex-col gap-5 max-w-lg mx-auto">
         {cards.map((card, i) => (
-          <div key={i} className="relative rounded-3xl overflow-hidden shadow-lg aspect-[4/3]">
+          <div key={i} className="relative rounded-3xl overflow-hidden shadow-md aspect-[4/3]">
             <Image
               src={card.img}
               alt={card.text}
               fill
               className="object-cover object-top"
+              loading="lazy"
+              sizes="(max-width: 640px) 100vw, 512px"
+              quality={75}
             />
-            {/* Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
-            {/* Quote */}
             <div className="absolute bottom-0 left-0 right-0 p-5">
               <p className="font-heading text-xl sm:text-2xl text-white italic leading-snug text-balance">
                 {card.text}
@@ -49,7 +51,6 @@ export function Pv2Identification() {
         ))}
       </div>
 
-      {/* Empathy bridge */}
       <div className="mt-10 max-w-lg mx-auto bg-white rounded-2xl p-6 border border-[#f5c6cf] text-center shadow-sm">
         <p className="text-[#2a1a1f] font-semibold text-lg leading-relaxed">
           Se você se reconheceu em qualquer uma dessas frases — isso não é fraqueza. É o seu corpo pedindo socorro.

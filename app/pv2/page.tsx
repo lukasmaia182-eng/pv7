@@ -13,8 +13,16 @@ export const metadata: Metadata = {
   title: 'Método Silêncio Hormonal — Chega de TPM intensa',
   description:
     'Um protocolo simples para acalmar seu corpo antes da TPM chegar. Menos irritação, mais controle emocional, mais leveza no dia a dia.',
+  metadataBase: new URL('https://v0-21-dias-para-se-libertar.vercel.app'),
+  openGraph: {
+    title: 'Método Silêncio Hormonal — Chega de TPM intensa',
+    description: 'Menos irritação, mais controle emocional. Protocolo simples que funciona.',
+    type: 'website',
+    url: 'https://v0-21-dias-para-se-libertar.vercel.app/pv2',
+  },
 }
 
+// Todos os componentes são Server Components — sem JS desnecessário no client
 export default function Pv2Page() {
   return (
     <main className="bg-white overflow-x-hidden">

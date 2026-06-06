@@ -1,3 +1,4 @@
+// Server Component
 import Image from 'next/image'
 
 const items = [
@@ -21,22 +22,24 @@ export function Pv2Offer() {
           </h2>
         </div>
 
-        {/* Mockup */}
+        {/* Mockup — lazy + tamanho limitado */}
         <div className="relative rounded-3xl overflow-hidden aspect-[4/3] mb-8 shadow-xl">
           <Image
             src="/images/pv2-mockup.png"
             alt="Mockup do Método Silêncio Hormonal"
             fill
             className="object-cover"
+            loading="lazy"
+            sizes="(max-width: 640px) 100vw, 512px"
+            quality={75}
           />
         </div>
 
-        {/* Itens */}
         <div className="flex flex-col gap-3 mb-8">
           {items.map((item, i) => (
             <div key={i} className="flex items-start gap-3 bg-[#fff5f7] border border-[#f5c6cf] rounded-xl p-4">
-              <div className="w-7 h-7 rounded-full bg-[#e8637a] flex items-center justify-center flex-shrink-0 mt-0.5">
-                <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <div className="w-6 h-6 rounded-full bg-[#e8637a] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg className="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
               </div>
@@ -59,7 +62,8 @@ export function Pv2Offer() {
 
           <a
             href="#"
-            className="inline-flex items-center justify-center gap-2 bg-[#e8637a] hover:bg-[#d45269] text-white font-bold rounded-full px-8 py-4 text-lg transition-all btn-pulse shadow-lg w-full"
+            className="inline-flex items-center justify-center gap-2 bg-[#e8637a] text-white font-bold rounded-full px-8 py-4 text-lg shadow-lg w-full btn-pulse"
+            style={{ WebkitTapHighlightColor: 'transparent' }}
           >
             Quero recuperar meu controle
           </a>
