@@ -161,3 +161,8 @@
 .font-heading {
   font-family: var(--font-cormorant), 'Georgia', serif;
 }
+
+/* Desativa ligaduras OpenType que causam artefato ^ em navegadores mobile com Cormorant */
+.font-heading {
+  font-feature-settings: "liga" 0, "calt" 0;
+}

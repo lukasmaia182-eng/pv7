@@ -62,7 +62,7 @@ export function Pv2Offer() {
 
           <a
             href="#"
-            className="inline-flex items-center justify-center gap-2 bg-[#e8637a] text-white font-bold rounded-full px-8 py-4 text-lg shadow-lg w-full btn-pulse"
+            className="inline-flex items-center justify-center gap-2 bg-[#e8637a] text-white font-bold rounded-full px-6 py-4 text-base sm:text-lg shadow-lg w-full btn-pulse"
             style={{ WebkitTapHighlightColor: 'transparent' }}
           >
             Quero recuperar meu controle
