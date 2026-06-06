@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   title: '21 Dias Para Se Libertar de um Narcisista | Projeto Renascer Emocional',
   description:
     'Em 21 dias você quebra o vínculo traumático que está destruindo seu sono, seu corpo e sua autoestima. Mais de 3.600 mulheres já se libertaram. Agora é a sua vez.',
+  metadataBase: new URL('https://v0-21-dias-para-se-libertar.vercel.app'),
   keywords: [
     'libertar de narcisista',
     'desapego narcisista',
@@ -35,6 +36,11 @@ export const metadata: Metadata = {
     description:
       'Em 21 dias você quebra o vínculo traumático que está destruindo seu sono, seu corpo e sua autoestima. Mais de 3.600 mulheres já se libertaram.',
     type: 'website',
+    url: 'https://v0-21-dias-para-se-libertar.vercel.app',
+    siteName: 'Projeto Renascer Emocional',
+  },
+  alternates: {
+    canonical: 'https://v0-21-dias-para-se-libertar.vercel.app',
   },
 }
 
