@@ -89,7 +89,7 @@ export function TestimonialsSection() {
           </p>
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-foreground text-balance leading-tight">
             O que mulheres que já fizeram{' '}
-            <span className="italic font-light">o desafio</span> dizem
+            <span className="italic font-light">os 21 dias</span> dizem
           </h2>
           <p className="text-muted-foreground mt-3 text-lg">
             Resultados reais de mulheres reais — como você.
@@ -133,7 +133,7 @@ export function TestimonialsSection() {
               {/* After */}
               <div className="bg-[var(--color-brand-muted)]/50 rounded-xl p-3.5 border border-[var(--color-brand)]/15">
                 <p className="text-xs uppercase tracking-wider text-[var(--color-brand)] mb-1.5 font-medium">
-                  Depois do desafio
+                  Depois dos 21 dias
                 </p>
                 <p className="text-foreground/80 text-sm leading-relaxed">
                   {expanded === i || t.after.length < 160
@@ -159,7 +159,7 @@ export function TestimonialsSection() {
             { num: '3.600+', label: 'Mulheres transformadas' },
             { num: '97%', label: 'Relatam mudança no Dia 4' },
             { num: '4.9/5', label: 'Avaliação média' },
-            { num: '7 dias', label: 'Para uma nova vida' },
+            { num: '21 dias', label: 'Para uma nova vida' },
           ].map((stat) => (
             <div key={stat.label}>
               <div className="font-heading text-2xl sm:text-3xl font-bold text-[var(--color-gold)]">

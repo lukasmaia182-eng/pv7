@@ -8,33 +8,33 @@ export function HeroSection() {
 
           {/* Left — copy */}
           <div className="relative z-10 order-2 md:order-1">
-            {/* Badge */}
+            {/* Badge — social proof imediato */}
             <div className="inline-flex items-center gap-2 bg-[var(--color-brand)]/15 border border-[var(--color-brand)]/30 rounded-full px-4 py-1.5 mb-6">
               <span className="w-2 h-2 rounded-full bg-[var(--color-brand)] animate-pulse inline-block" />
               <span className="text-[var(--color-brand)] text-sm font-medium tracking-wide">
-                +3.600 mulheres já saíram do outro lado
+                +3.600 mulheres já se libertaram
               </span>
             </div>
 
-            {/* Main Headline — dor + número + resultado (Dan Kennedy / Gary Halbert) */}
+            {/* Headline principal — direta, emocional, impossível de ignorar */}
             <h1 className="font-heading text-foreground text-balance mb-5">
               <span className="block text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight">
                 Você terminou com ele.
               </span>
               <span className="block text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight text-[var(--color-brand)]">
-                Por que ele ainda mora dentro de você?
+                Mas ele ainda mora dentro de você.
               </span>
             </h1>
 
-            {/* Subheadline — específica, com mecanismo e tempo */}
-            <p className="text-foreground/75 text-lg sm:text-xl max-w-xl leading-relaxed mb-4">
-              Em <strong className="text-foreground">7 dias de encontros ao vivo</strong>, você vai entender o mecanismo neurológico que te mantém presa — e quebrá-lo de uma vez por todas.
+            {/* Subheadline — mecanismo + tempo + resultado */}
+            <p className="text-foreground/75 text-lg sm:text-xl max-w-xl leading-relaxed mb-3">
+              Em <strong className="text-foreground">21 dias</strong>, você vai entender por que não consegue esquecer — e usar um método estruturado para cortar esse vínculo de uma vez por todas.
             </p>
             <p className="text-foreground/60 text-base max-w-xl leading-relaxed mb-8">
-              Sem força de vontade. Sem "superar". Com um processo estruturado que trata o vínculo traumático onde ele realmente vive: no seu sistema nervoso.
+              Sem força de vontade. Sem anos de terapia. Com um processo que vai ao nível onde o trauma realmente vive: <strong className="text-foreground/70">o sistema nervoso.</strong>
             </p>
 
-            {/* Mini proof — nomes reais antes do CTA */}
+            {/* Mini proof */}
             <div className="flex items-center gap-3 mb-8">
               <div className="flex -space-x-2">
                 {['CR', 'FM', 'JT', 'PL', 'MS'].map((initials, i) => (
@@ -47,7 +47,7 @@ export function HeroSection() {
                 ))}
               </div>
               <p className="text-foreground/60 text-sm leading-tight">
-                <strong className="text-foreground">Camila, Fernanda, Juliana</strong> e mais 3.597 já se libertaram esta semana
+                <strong className="text-foreground">Camila, Fernanda, Juliana</strong> e mais 3.597 já estão do outro lado
               </p>
             </div>
 
@@ -57,7 +57,7 @@ export function HeroSection() {
                 href="#oferta"
                 className="inline-flex items-center gap-2 bg-[var(--color-brand)] text-white font-bold rounded-full px-8 py-4 text-lg hover:bg-[oklch(0.52_0.22_350)] transition-all transform hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-[var(--color-brand)]/30 btn-pulse"
               >
-                Quero sair dessa agora
+                Quero me libertar agora
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
@@ -78,10 +78,9 @@ export function HeroSection() {
             </p>
           </div>
 
-          {/* Right — antes e depois lado a lado */}
+          {/* Right — antes e depois */}
           <div className="relative order-1 md:order-2 flex justify-center md:justify-end">
             <div className="relative w-full max-w-sm md:max-w-none">
-              {/* Decorative shape behind images */}
               <div className="absolute inset-0 rounded-[2rem] bg-[var(--color-brand)]/20 translate-x-4 translate-y-4 -z-10" />
 
               <div className="relative grid grid-cols-2 gap-2 rounded-[2rem] overflow-hidden shadow-2xl">
@@ -120,12 +119,11 @@ export function HeroSection() {
                 </div>
               </div>
 
-              {/* Floating badge — fora do grid para nao sobrepor as labels */}
+              {/* Badge flutuante */}
               <div className="absolute -bottom-5 left-4 bg-white rounded-2xl shadow-xl px-4 py-3 border border-border z-20">
-                <div className="font-heading text-2xl font-bold text-[var(--color-brand)]">7 dias</div>
+                <div className="font-heading text-2xl font-bold text-[var(--color-brand)]">21 dias</div>
                 <div className="text-xs text-muted-foreground leading-tight mt-0.5">para uma nova você</div>
               </div>
-              {/* Gold accent dot */}
               <div className="absolute -top-3 -right-3 w-12 h-12 rounded-full bg-[var(--color-gold)] opacity-80 blur-sm" />
               <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-[var(--color-gold)]" />
             </div>
@@ -134,7 +132,6 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-background to-transparent" />
     </section>
   )

@@ -53,7 +53,7 @@ export function AnnouncementBar() {
 
   return (
     <div className="bg-[var(--color-brand)] text-white py-2.5 px-4 text-center text-sm font-medium">
-      <span className="opacity-90">Preço promocional encerra em</span>{' '}
+      <span className="opacity-90">Oferta do programa de 21 dias encerra em</span>{' '}
       <span className="font-bold text-[var(--color-gold)] tabular-nums">
         {pad(timeLeft.hours)}:{pad(timeLeft.minutes)}:{pad(timeLeft.seconds)}
       </span>{' '}

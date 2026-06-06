@@ -32,8 +32,8 @@ const faqs = [
     a: 'Não. O desafio foi projetado para funcionar independentemente do seu status atual. Seja você que terminou recentemente, que ainda tem contato por necessidade, ou que saiu há anos — o processo trabalha no vínculo interno, não nas circunstâncias externas.',
   },
   {
-    q: 'Em qual formato acontece o desafio?',
-    a: 'O desafio acontece em encontros online ao vivo, com duração de aproximadamente 1 hora por dia, durante 7 dias consecutivos. Todos os encontros são gravados e você mantém acesso ao conteúdo após o término.',
+    q: 'Em qual formato acontece o programa?',
+    a: 'O programa acontece em aulas online gravadas com acompanhamento ao vivo, dividido em 3 semanas de 7 dias cada. Você acessa no seu ritmo e mantém acesso ao conteúdo após o término. Os encontros ao vivo são gravados — você não perde nada.',
   },
 ]
 
