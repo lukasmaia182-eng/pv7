@@ -13,29 +13,31 @@ export function GuaranteeSection() {
           Sem risco algum
         </p>
 
-        <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-foreground text-balance leading-tight mb-6">
+        <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-foreground text-balance leading-tight mb-4">
           Garantia Incondicional{' '}
-          <span className="italic font-light">de 7 Dias</span>
+          <span className="italic font-light text-[var(--color-brand)]">de 7 Dias</span>
         </h2>
 
-        <p className="font-heading text-xl sm:text-2xl text-foreground/80 italic mb-8">
-          &ldquo;Ou funciona ou você não paga.&rdquo;
+        <p className="font-heading text-xl sm:text-2xl text-foreground/75 italic mb-8 max-w-lg mx-auto">
+          &ldquo;Você não arrisca nada. O risco é completamente nosso.&rdquo;
         </p>
 
         <div className="bg-card border border-border rounded-2xl p-6 sm:p-8 text-left max-w-xl mx-auto">
           <p className="text-foreground/80 leading-relaxed mb-4">
-            Se em qualquer momento durante os 7 dias você sentir que o desafio não é para você — por qualquer razão, sem precisar explicar nada — você recebe{' '}
+            Se em qualquer momento durante os 7 dias você sentir que o desafio não é para você — por qualquer razão, sem precisar explicar absolutamente nada — você recebe{' '}
             <strong className="text-foreground">100% do seu investimento de volta.</strong>
           </p>
-          <p className="text-foreground/80 leading-relaxed mb-6">
-            Sem perguntas. Sem burocracia. Sem julgamento.
+          <p className="text-foreground/80 leading-relaxed mb-4">
+            Sem perguntas. Sem formulário. Sem espera. Direto para sua conta.
           </p>
-          <div className="bg-[var(--color-brand)]/8 border border-[var(--color-brand)]/15 rounded-xl p-4">
+          <div className="bg-[var(--color-brand)]/8 border border-[var(--color-brand)]/15 rounded-xl p-4 mb-4">
             <p className="text-foreground font-medium text-sm leading-relaxed">
-              Você não tem nada a perder. E tem tudo a ganhar. O único risco real aqui é{' '}
-              <em>não entrar</em> — e daqui a 7 dias estar exatamente onde está hoje.
+              Pense desta forma: você pode entrar, assistir os 7 dias inteiros, aplicar o método — e se não sentir absolutamente nada mudar, pedir o reembolso. Você não perde nada. E tem tudo a ganhar.
             </p>
           </div>
+          <p className="text-muted-foreground text-sm text-center">
+            O único risco real é <em>não entrar</em> — e daqui a 7 dias estar exatamente onde está agora.
+          </p>
         </div>
       </div>
     </section>

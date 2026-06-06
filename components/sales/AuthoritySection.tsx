@@ -7,14 +7,16 @@ export function AuthoritySection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image side */}
           <div className="relative order-2 md:order-1">
-            <div className="relative aspect-[4/5] max-w-sm mx-auto">
-              <div className="absolute inset-0 rounded-3xl bg-[var(--color-brand)]/10 translate-x-3 translate-y-3" />
-              <div className="relative rounded-3xl overflow-hidden border-2 border-[var(--color-brand)]/20 shadow-2xl">
+            <div className="relative max-w-sm mx-auto">
+              {/* Sombra decorativa atrás */}
+              <div className="absolute inset-0 rounded-3xl bg-[var(--color-brand)]/15 translate-x-3 translate-y-3" />
+              {/* Container com aspect-ratio e position:relative para o fill funcionar */}
+              <div className="relative aspect-[4/5] rounded-3xl overflow-hidden border-2 border-[var(--color-brand)]/20 shadow-2xl">
                 <Image
                   src="/images/dr-jane.png"
                   alt="Projeto Renascer Emocional — especialista em trauma narcisista"
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                 />
               </div>
             </div>
@@ -55,7 +57,7 @@ export function AuthoritySection() {
             {/* Quote */}
             <div className="mt-8 border-l-4 border-[var(--color-brand)] pl-5">
               <p className="font-heading text-xl md:text-2xl italic text-foreground font-medium leading-snug">
-                &ldquo;Eu não digo que você vai ficar bem. Eu te mostro o caminho de como chegar lá.&rdquo;
+                &ldquo;Eu já vi mulheres incrivelmente fortes chegarem completamente destruídas. E eu as vi saírem de volta a si mesmas. Não é mágica. É processo. E o processo funciona.&rdquo;
               </p>
               <p className="text-muted-foreground text-sm mt-2">— Projeto Renascer Emocional</p>
             </div>

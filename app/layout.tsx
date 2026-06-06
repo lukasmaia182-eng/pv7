@@ -17,22 +17,23 @@ const cormorant = Cormorant_Garamond({
 })
 
 export const metadata: Metadata = {
-  title: 'Desafio Desapego Narcisista | 7 Dias Para se Libertar — Projeto Renascer Emocional',
+  title: '21 Dias Para Se Libertar de um Narcisista | Projeto Renascer Emocional',
   description:
-    'Em 7 dias você quebra o vínculo traumático que está destruindo seu sono, seu corpo e sua autoestima. Mais de 3.600 mulheres já se libertaram. Agora é a sua vez.',
+    'Em 21 dias você quebra o vínculo traumático que está destruindo seu sono, seu corpo e sua autoestima. Mais de 3.600 mulheres já se libertaram. Agora é a sua vez.',
   keywords: [
+    'libertar de narcisista',
     'desapego narcisista',
     'relacionamento abusivo',
     'trauma narcisista',
     'vínculo traumático',
     'cura emocional',
     'Projeto Renascer Emocional',
-    'desafio 7 dias',
+    '21 dias narcisista',
   ],
   openGraph: {
-    title: 'Desafio Desapego Narcisista | 7 Dias Para se Libertar',
+    title: '21 Dias Para Se Libertar de um Narcisista | Projeto Renascer Emocional',
     description:
-      'Em 7 dias você quebra o vínculo traumático que está destruindo seu sono, seu corpo e sua autoestima.',
+      'Em 21 dias você quebra o vínculo traumático que está destruindo seu sono, seu corpo e sua autoestima. Mais de 3.600 mulheres já se libertaram.',
     type: 'website',
   },
 }

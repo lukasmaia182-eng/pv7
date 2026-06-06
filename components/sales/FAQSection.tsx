@@ -4,6 +4,10 @@ import { useState } from 'react'
 
 const faqs = [
   {
+    q: 'Meu caso é mais grave que o das outras. Isso vai funcionar pra mim?',
+    a: 'Essa é exatamente a objeção que quase todas as 3.600 mulheres tiveram antes de entrar. "Minha história é diferente. Meu relacionamento foi mais longo. O abuso foi mais intenso. Fui mais destruída." E sabe o que aconteceu? O método funcionou justamente por tratar o mecanismo neurológico — não os detalhes da história. O vínculo traumático funciona da mesma forma, independente da duração ou intensidade. Você não é um caso especial de impossibilidade. Você é um caso especial de merecedora de cura.',
+  },
+  {
     q: 'E se eu já fiz terapia e não funcionou?',
     a: 'Terapia convencional não foi criada para trauma narcisista. Esse método foi. São abordagens diferentes para feridas diferentes. Mulheres que passaram anos em terapia sem resultado encontraram aqui o que faltava — não porque terapia seja ruim, mas porque esse método trata o que a terapia convencional não alcança: o vínculo traumático no sistema nervoso.',
   },
@@ -28,8 +32,8 @@ const faqs = [
     a: 'Não. O desafio foi projetado para funcionar independentemente do seu status atual. Seja você que terminou recentemente, que ainda tem contato por necessidade, ou que saiu há anos — o processo trabalha no vínculo interno, não nas circunstâncias externas.',
   },
   {
-    q: 'Em qual formato acontece o desafio?',
-    a: 'O desafio acontece em encontros online ao vivo, com duração de aproximadamente 1 hora por dia, durante 7 dias consecutivos. Todos os encontros são gravados e você mantém acesso ao conteúdo após o término.',
+    q: 'Em qual formato acontece o programa?',
+    a: 'O programa acontece em aulas online gravadas com acompanhamento ao vivo, dividido em 3 semanas de 7 dias cada. Você acessa no seu ritmo e mantém acesso ao conteúdo após o término. Os encontros ao vivo são gravados — você não perde nada.',
   },
 ]
 
